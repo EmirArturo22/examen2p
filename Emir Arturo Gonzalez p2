@@ -1,0 +1,25 @@
+# Ingresa la hora 24 horas
+hora_actual = int(input("Ingresa la hora (formato 24h): "))
+
+# Ingresa el día 
+dia_semana = input("Ingresa el día de la semana: ")
+
+# Tipo de tarea 
+tipo_tarea = "descanso"
+
+# Criterio 1
+if 1 <= hora_actual <= 5:
+    print("Debes estar dormido")
+elif 6 <= hora_actual <= 15:
+    print("Debes estar en clase")
+elif 16 <= hora_actual <= 22:
+    print("Puedes hacer tarea")
+else:
+    print("Hora no válida")
+
+# Criterio 2
+if 18 <= hora_actual < 22 and tipo_tarea == "descanso":
+    print("Además de tomar una siesta, puedes comenzar a realizar tu tarea")
+
+# Muestra el día
+print(f"Hoy es {dia_semana}")
